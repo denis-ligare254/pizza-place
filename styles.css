@@ -1,0 +1,177 @@
+:root{
+ --primaryColor:#048BA8;
+ --secondarycolor:#FEF9EF;
+ --mainBlack:#242423;
+ --mainWhite:#FFFFFF;
+ --transition:all 2s linear;
+ --line-height:2px;
+ --mainSpacing:0.2rem;
+ --scroll-behavior: smooth;
+}
+*{
+ margin: 0px;
+ padding:0px;
+ box-sizing: border-box;
+}
+a{
+ text-decoration: none;
+}
+.main-navbar{
+ padding:0 2rem;
+ background-color: var(--primaryColor);
+}
+#one{
+  text-transform: uppercase;
+  color: #824C71;
+}
+#about{
+  text-transform: uppercase;
+}
+.main-navbar a{
+ text-transform: capitalize;
+ color: var(--secondarycolor);
+ transition: var(--transition);
+ display:block;
+ padding: 1rem 0;
+
+}
+.main-navbar a:hover{
+ color: var(--mainBlack);
+}
+.main-navbar li{
+ list-style-type:none;
+}
+@media screen and (min-width:546px){
+.main-navbar ul{
+ max-width: 1170px;
+ margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+ 
+ }
+ .main-navbar a{
+  text-align: center;
+ }
+}
+/* about section */
+.about{
+ background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/images/pexels-photo-3053082.jpeg') center/cover fixed no-repeat;
+ min-height: 80vh;
+}
+.about{
+text-align:center;
+display: grid;
+justify-content: center;
+align-items: center;
+color: var(--secondarycolor);
+animation: move 4s ease-in-out 2;
+
+}
+.main-header{
+ background: black;
+}
+.shida{
+ animation-name: move;
+ animation-duration:  10s;
+ animation-iteration-count:2;
+ 
+ text-transform: uppercase;
+}
+
+/* content-divider */
+.content-divider{
+ height: 0.5rem;
+ background:linear-gradient(to left ,var(--primaryColor),var(--secondarycolor),var(--mainBlack),var(--mainWhite))
+}
+
+.main-about{
+ 
+ background-color: #D7FDF0;
+ text-align: center;
+ display: grid;
+ justify-content: center;
+ align-items: center;
+ padding: 5rem;
+}
+
+.main-footer{
+color: var(--mainWhite);
+text-align: center;
+padding: 2rem;
+height: 10rem;
+text-transform: uppercase;
+background:#D8FFDD;
+color:#0A0F0D;
+padding-top: 5rem;
+} 
+.copy:hover{
+  color: orange;
+}
+/* end of footer */
+
+/* landing */
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* order section */
+ .order {
+  background-attachment: fixed;
+  background:url('./images/kid.jpeg') center/cover fixed no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}  
+
+.order-overlay {
+  background-color:#696969;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 20px;
+  padding-left: 6%;
+ 
+}
+.order h2 {
+  text-align: center;
+} 
+
+.choice h2 {
+  color:#BA5A31;
+  text-align: left;
+} 
+
+#info {
+  padding-top: 5%;
+  font-size: 22px;
+  padding-right: 8%;
+  padding-left: 5%;
+  color: #ffa500;
+} 
+.order-placed{
+   padding: 1rem 0; 
+  text-transform: uppercase;
+}
+
+button {
+  padding: 0.8rem;
+  color: var(--mainBlack);
+  background-color:#C9EDDC;
+  outline-offset: 2px solid var(--mainBlack);
+}
+.icons{
+  font-size: 2rem;
+  color: #090C9B;
+  padding-top:10px
+}
+.icons:hover{
+  color: var(--primaryColor);
+}
